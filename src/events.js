@@ -12,6 +12,11 @@ const events = {
   fill: "fill",
   filled: "filled",
   playerUpdate: "playerUpdate",
+  gameStarted: "gameStarted",
+  leaderNotif: "leaderNotif",
+  gameEnded: "gameEnded",
+  nameCheck: "nameCheck",
+  nameOverlap: "nameOverlap",
 };
 
 export default events;

@@ -11,6 +11,7 @@ input {
 }
 
 .loginBox {
+  position: relative;
   box-shadow: $boxShadow;
   background-color: white;
   padding: 40px;
@@ -22,5 +23,14 @@ input {
   }
   input {
     width: 200px;
+  }
+  .errorBox {
+    position: absolute;
+    color: crimson;
+    padding: 8px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 }
