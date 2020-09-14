@@ -8,6 +8,8 @@ let word = null;
 let leader = null;
 let timeout = null;
 
+const timeSet = 30;
+
 const chooseLeader = () => sockets[Math.floor(Math.random() * sockets.length)];
 
 const socketController = (socket, io) => {
@@ -23,9 +25,9 @@ const socketController = (socket, io) => {
         word = chooseWord();
         superBroadcast(events.gameStarting);
         setTimeout(() => {
-          superBroadcast(events.gameStarted);
+          superBroadcast(events.gameStarted, { leader, timeSet });
           io.to(leader.id).emit(events.leaderNotif, { word });
-          timeout = setTimeout(endGame, 30000);
+          timeout = setTimeout(endGame, timeSet*1000);
         }, 5000);
       }
     }

@@ -1,10 +1,6 @@
 .player__board {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 36px;
-  grid-gap: 10px;
   margin-bottom: 30px;
-  span {
+  div {
     box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
     background-color: white;
     padding: 10px;
@@ -12,8 +8,9 @@
     border-radius: 20px;
     margin-right: 20px;
     width: 100%;
-    &:last-child {
-      margin-right: 0;
-    }
+    margin: 8px 0;
+  }
+  .leader{
+    border: 4px solid #ffcc3e7a;
   }
 }

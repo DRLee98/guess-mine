@@ -12,7 +12,19 @@
     box-shadow: 0 3px 36px rgba(23, 55, 87, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   }
   .main {
+    position: relative;
     margin-right: 200px;
+    #jsNotifs{
+      height: 25px;
+      margin-bottom: 8px;
+      font-size: 25px;
+      text-align: center;
+    }
+    #jsTimer{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
     #jsCanvas {
       width: 700px;
       height: 700px;
